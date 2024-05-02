@@ -1,0 +1,29 @@
+.mainBox {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px;
+  min-height: 200px;
+  min-width: 290px;
+  background-color: aliceblue;
+}
+
+.formClass {
+  display: grid;
+  padding: 50px 40px;
+  gap: 20px;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.tableUpload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: row;
+}
