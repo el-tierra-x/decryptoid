@@ -48,6 +48,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if ($stmt->affected_rows > 0) {
     echo "Signup successful!";
+
+    session_regenerate_id();
+
     $_SESSION["loggedin"] = true;
     $_SESSION["username"] = $username;
     setcookie("username", $username, time() + 3600, "/");

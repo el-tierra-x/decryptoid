@@ -72,6 +72,9 @@
       echo $data;
       if (password_verify($password, $user['password'])) {
         // Password is correct, so start a new session
+  
+        session_regenerate_id();
+
         $_SESSION["loggedin"] = true;
         $_SESSION["username"] = $username;
 
